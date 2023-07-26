@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div p{
+            background-color: orange;
+        }
+        body div{
+            border: 2px solid black;
+          
+        }
+        div > p{
+            background-color: palevioletred;
+        }
+        p > span {
+            background-color: aqua;
+        }
+        section + p{
+            background-color: chartreuse;
+        }
+        section ~ p{
+            border: 3px solid red;
+        }
+    </style>
+    <title>Combinators Selectors</title>
+</head>
+<body>
+    <div>
+        <p>para1 <span>span1</span></p>
+        <p>para2</p>
+        <p>para3 <span>span2</span></p>
+             <section>
+                <p>para 4 from section</p>
+            </section>
+            <p>para check</p>
+    </div>
+        <div>
+            <div>Sample div</div>
+        </div>
+        <div>
+            <section><p>para 5 from section</p></section>
+            <p>para6</p>
+        </div>
+        <br><br>
+        <div>
+            <section>
+                <p>para7 from section</p>
+            </section>
+            <p>para8</p>
+            <p>para9</p>
+            <p>para10</p>
+        </div>
+    
+</body>
+</html>
+<!--
+    2.combinators selector
+    i.descendent selector
+    ii.child selector >
+    iii.adjecent sibling selector +
+    iv. general sibling selector ~ (tilde)
+
+    elem1 elem2{
+
+    }
+
+    pseudo class selectors 
+    1.hover (mouse over)
+    
+-->

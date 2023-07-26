@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>pseudo element</title>
+     <style>
+        p::selection{
+            color: brown;
+            background-color: chartreuse;
+        }
+        p::first-line{
+            color: rgb(241, 9, 9);
+        }
+        p::first-letter{
+            color: blue;
+            font-size: 30px;
+        }
+        p.test::after{
+            content: "******";
+        }
+        ul ::marker{
+            color: blueviolet;
+            font-size: 30px;
+        }
+     </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro necessitatibus veritatis nisi asperiores eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos accusantium tenetur dolor similique necessitatibus soluta.</p>
+    <p class="test">Before sample</p>
+    <ul type="square">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+</body>
+</html>

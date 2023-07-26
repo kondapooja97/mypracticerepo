@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Position Demo</title>
+     <style>
+        .one
+        {
+            position: relative;
+            left: 50px;
+            top: 100px;
+            width: 500px;
+            height: 100px;
+            border: 2px solid red;
+        }
+        .two
+        {
+            position: fixed;
+            
+            width: 500px;
+            height: 400px;
+            border: 2px solid red;
+            background-color: yellow;
+        }
+        .three
+        {
+            position: absolute;
+           
+            width: 500px;
+            height: 100px;
+            border: 2px solid rgb(0, 255, 64);
+            background-color: rgb(109, 109, 72);
+        }
+        .four
+        {
+            position: absolute;
+            top: 100px;
+            right: 30px;
+            width: 500px;
+            height: 100px;
+            border: 2px solid rgb(255, 0, 153);
+            background-color: rgb(8, 0, 255);
+        }
+     </style>
+</head>
+<body>
+    <div class="one">This is position sample div</div>
+    <!--static relative(relative to default)  fixed(according to viewport) absolute sticky  by default position is static
+    top bottom right left-->
+    <br><br>
+    <div class="two">This is position sample div</div>
+    <br><br>
+    <div class="three"></div>
+    <div class="four"></div>
+</body>
+</html>

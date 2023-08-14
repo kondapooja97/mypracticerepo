@@ -92,5 +92,39 @@ console.log(u2[2]);
 
 // String Search Methods
 // String indexOf()
-let d ='monkey';
-console.log(d.indexOf('e'));
+let d ='monkeyeee';
+console.log('First index : ',d.indexOf('e'));//first match ind
+console.log('Last index : ',d.lastIndexOf('e'));//last match ind
+
+let text = "Please locatekjkjkj where 'locate' occurs!";
+console.log( text.search("locate"));
+console.log( text.search(/locate/))
+
+let text3 = "Please locatek jkjkjase where asere 'locate' occurs!";
+console.log(text3.match('ase'));
+console.log(text3.match(/ase/));
+console.log(text3.match(/ase/g));
+
+let text4 = "Hello World, welcome to the universe.";
+console.log(text4.includes("world"));
+
+// // let a1 = {
+// //     "employees": [
+// //         { "firstName": "John", "lastName": "Doe" },
+// //         { "firstName": "Anna", "lastName": "Smith" },
+// //         { "firstName": "Peter", "lastName": "Jones" }
+// //     ],
+// //     statusCode:2001,
+// //     successMsg:'Data saved succussfully'
+// // }
+
+
+//startsWith()
+let msg = 'hhhh 200 Success';
+console.log(msg.startsWith('20'));
+
+text7 = "John Doe";
+console.log(text7.endsWith('e'));
+
+text7 = "Jo Doe h Doen Doe";
+console.log(Array.from(text7.matchAll('Doe')));

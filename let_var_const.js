@@ -2,6 +2,9 @@
 
 //scope difference: 
 //var:function level scope and let,const :block scope
+
+let amount=500; //global declaration of variable can be used in any of the function.
+
 function letvarconstdiff()
 {
     //code block
@@ -19,6 +22,8 @@ function letvarconstdiff()
         console.log(c);  //50
         console.log(d);  //90
         console.log(e);  //80
+        amount=400; //the global variable amount is updated to the value=400;
+        console.log(amount);
     }
     // console.log(d);
     console.log(a);  //Uncaught ReferenceError: error
@@ -26,12 +31,11 @@ function letvarconstdiff()
 
 }
 letvarconstdiff();
-    S`1S  A`
 
 //hoisting :  define value to the variable first and then declare it
 function test(){
   
-    // let name = 'poonam'; //D+D
+    //  let name = 'poonam'; //D+D
     let name;  //declaration
     name ='poonam';   //defination
  
@@ -47,5 +51,50 @@ function test(){
     //  const city2; //with const keyword hoisting is not possible
     //  console.log(city2);
  }
- 
- test();
+    test();
+
+    // Reassignment of function variable
+
+    reAssignment(); //we can call the function() before or after the function defination.
+
+ function reAssignment(){
+    let name='pooja'; //Reassigning value to the variable is possible with let keyword
+    name='kavita';
+    name='prabhavati';
+    console.log(name);
+
+    var surName='bonal'; //Reassigning value to the variable is possible with var keyword
+    surName='arkal';
+    surName='konda';
+    console.log(surName);
+
+    const middleName='janardhan'; //Reassigning value to the variable is not possible with const keyword.
+    // middleName='janu';
+    // middleName='janya';
+    console.log(middleName);
+ }
+
+    //Redeclaration of function variable with keywords
+
+    function reDeclaration() {
+        let name='sourya';  //Redeclaration of variable is not possible with let keyword.
+        // let name='shubhangi';
+        console.log(name);
+
+        var color='pink';   //Redeclaration of variable is possible with var keyword.
+        var color='yellow';
+        var color='orange';
+        console.log(color);
+
+        const fruit='banana';  //Redeclaration of variable is not possible with const keyword.
+        // const fruit='lemon';
+        // const fruit='apple';
+        console.log(fruit);
+
+    }
+    reDeclaration();
+
+    function amtCalculation(){
+        console.log(amount);
+    }
+    amtCalculation();

@@ -22,7 +22,7 @@ function letvarconstdiff()
         console.log(c);  //50
         console.log(d);  //90
         console.log(e);  //80
-        amount=400; //the global variable amount is updated to the value=400;
+       let  amount=400; //the global variable amount is updated to the value=400;
         console.log(amount);
     }
     // console.log(d);

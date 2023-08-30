@@ -97,3 +97,10 @@ newEmployee1.ename = "Beck";
 newEmployee1.salary = 70000;
 console.log("Employee=> ", employee1);
 console.log("New Employee=> ", newEmployee1);
+
+// filter array ittration method
+let no=[10,50,100,22,20,4,40,60];
+var itemgreater=no.filter(item=>{
+  return item > 20
+})
+console.log(itemgreater);

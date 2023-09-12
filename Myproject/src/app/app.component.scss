@@ -1,11 +1,25 @@
 // css with class selector.
 .main
 {
-    background-color: rgb(11, 237, 113);
-    height: 500px;
-    width: 500px;
-    color: red;
-    text-shadow: rgb(32, 239, 9);
-    // text-transform: uppercase;
-    // text-decoration: underline;
+    // background-color: rgb(158, 243, 196);
+    height: 800px;
+    width: 110rem;
+    color:chartreuse;
+    background-image: url('/assets/Images/natureimg.jpg');
+}
+
+.title-section
+{
+    margin: auto;
+    text-align: center;
+}
+.city-section
+{
+    font-size: 50px;
+    font-family: cursive;
+    color:darkblue;
+}
+.navigation-page
+{
+    background-color: rgb(249, 7, 104);
 }

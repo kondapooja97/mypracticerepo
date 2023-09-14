@@ -16,11 +16,31 @@
   <p>{{500+40 +'pooja' + 20+30}}</p><!-- <p>{{typeof(no1)}}</p> In interpolation type of operator will through error -->
 
   <p>{{learningstringinterpolation()}}</p>
+   
   <!-- we can function into the ingterpollation -->
 
  <!-- <p>{{no2 = 600}}</p>assigning value to the property from interpolation is not possible-->
 
 <!-- <p>{{}}</p> Parser Error: Blank expressions are not allowed in interpolated strings -->
+
+<p>{{no3}}</p>
+<p>{{car}}</p><!--array of property-->
+<p>{{student.salary}}</p>
+<p>{{student.age}}</p>
+<p>{{student.name}}</p>
+
+
+<!--Property Binding -->
+name: <input type="text" [value]='city2' placeholder="Please Enter your name">
+<br>
+Gender:
+Male : <input type="radio" [value]="genderM" name="gender" (change)="gen($event)">
+Female : <input type="radio" [value]="genderF" name="gender" (change)="gen($event)">
+<br><br>
+Hobbies:
+Painting : <input type="checkbox" [value]="paintinghobbies" (change)="Hobbies($event)">
+Sketching : <input type="checkbox" [value]="sketchinghobbies" (change)="Hobbies($event)">
+Reading : <input type="checkbox" [value]="readinghobbies" (change)="Hobbies($event)">
 </div>
 
 

@@ -1,0 +1,28 @@
+.main{
+    background-image: url('cute doll.jpg');
+    height: 1000px;
+    background-repeat: repeat;
+}
+.home-btn{
+    font-size: xx-large;
+    background-color: chartreuse;
+    border-radius: 25%;
+    border-color: lightseagreen;
+    box-shadow: blueviolet;
+}
+
+.test-btn{
+    background-color: darkcyan;
+    font-size:xx-large;
+    border-radius: 25%;
+}
+.gallery-btn{
+    background-color: darkorange;
+    font-style: italic;
+    font-size: x-large;
+    // border-radius: 50%;
+    // border: none;
+    // background-clip: padding-box;
+    font: 100;
+    font-weight:bold;
+}

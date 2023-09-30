@@ -1,27 +1,27 @@
 // css with class selector.
 .main
 {
-    // background-color: rgb(158, 243, 196);
-    height: 1000px;
-    width: 110rem;
-    color:chartreuse;
-    font-size: 25px;
-    background-repeat: no-repeat;
-    background-image: url('/assets/Images/natureimg.jpg');
+    background-color: rgb(119, 171, 145);
+    height: 1200px;
+    width: 150rem;
+    color:rgba(255, 0, 0, 0.919);
+    font-size: 20px;
+    background-repeat:repeat;
+    // background-image: url('/assets/Images/natureimg.jpg');
 }
 
 .title-section
 {
     margin: auto;
-    text-align: center;
+    text-align: left;
 }
 .city-section
 {
-    font-size: 50px;
+    font-size: 30px;
     font-family: cursive;
-    color:rgb(245, 9, 9);
+    color:rgb(53, 5, 244);
 }
 .navigation-page
 {
-    background-color: rgb(243, 53, 82);
+    background-color: rgb(15, 12, 13);
 }

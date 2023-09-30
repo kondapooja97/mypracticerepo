@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';//import section
+import { Router } from '@angular/router';
 
 @Component({    //component directive/decorator
   selector: 'app-root',
@@ -36,7 +37,15 @@ export class AppComponent { //class to write code here
   userhobbies:string[]=[];
 
   favfruit = 'Orange';
-  constructor(){}    //to inject dependancies
+
+  studentName: any = 'ppppppppppppp';
+  empName = '';
+
+  no1: number = 10;
+  no2: number = 20;
+  result?: number;
+
+  constructor(private router:Router){}    //to inject dependancies
   
     //life cycle hooks 
 
@@ -59,14 +68,31 @@ export class AppComponent { //class to write code here
     console.log(data.target.value);
     console.log(this.userhobbies);
    }
+   submit(event:any){
+    console.log(event);
+    }
    //this keyword use >> js : this key word is getting used inside object to point object's key
   //ts: this keyword is used to point global properties.
   //It is also used in functions to fetch value of global properties.
-  
    fruit(){
     console.log(this.favfruit);
    }
+   
   
-  
+    addition(){
+      this.result=this.num1+this.num2;
+      console.log('Res-->',this.result);
+      
+    }
+    addition1(event:any)
+    {
+      this.num1=parseInt(event.target.value);
+    }
+    addition2(event:any){
+      this.num2=parseInt(event.target.value);
+    }
 
+  landing() {
+    this.router.navigateByUrl('landing')
+  }
 }

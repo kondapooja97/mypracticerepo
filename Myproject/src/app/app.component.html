@@ -1,21 +1,21 @@
 <!-- first Angular project creation -->
-<div class="main">
-  <div class="navigation-page">
-       <h1 class="title-section">{{title}}</h1>
-  </div>
-  <p class="city-section">{{city3}}</p>
+<!-- <div class="main"> -->
+  <!-- <div class="navigation-page"> -->
+       <!-- <h1 class="title-section">{{title}}</h1> -->
+  <!-- </div> -->
+  <!-- <p class="city-section">{{city3}}</p> -->
 
-  {{name}}
-  <p>{{name}}</p>
-  <p>{{num1+num2}}</p><!-- can we pass arithmatic expression in string interpolation:yes -->
+  <!-- {{name}} -->
+  <!-- <p>{{name}}</p> -->
+  <!-- <p>{{num1+num2}}</p>can we pass arithmatic expression in string interpolation:yes -->
 
-  <p>{{num1==10}}</p><!-- it will return true or false-->
+  <!-- <p>{{num1==10}}</p>it will return true or false -->
 
-  <p>{{500+20}}</p>
+  <!-- <p>{{500+20}}</p> -->
 
-  <p>{{500+40 +'pooja' + 20+30}}</p><!-- <p>{{typeof(no1)}}</p> In interpolation type of operator will through error -->
+  <!-- <p>{{500+40 +'pooja' + 20+30}}</p><p>{{typeof(no1)}}</p> In interpolation type of operator will through error -->
 
-  <p>{{learningstringinterpolation()}}</p>
+  <!-- <p>{{learningstringinterpolation()}}</p> -->
    
   <!-- we can function into the ingterpollation -->
 
@@ -23,25 +23,60 @@
 
 <!-- <p>{{}}</p> Parser Error: Blank expressions are not allowed in interpolated strings -->
 
-<p>{{no3}}</p>
-<p>{{car}}</p><!--array of property-->
-<p>{{student.salary}}</p>
-<p>{{student.age}}</p>
-<p>{{student.name}}</p>
+<!-- <p>{{no3}}</p> -->
+<!-- <p>{{car}}</p>array of property -->
+<!-- <p>{{student.salary}}</p> -->
+<!-- <p>{{student.age}}</p> -->
+<!-- <p>{{student.name}}</p> -->
 
 
 <!--Property Binding -->
-name: <input type="text" [value]='city2' placeholder="Please Enter your name">
-<br>
-Gender:
-Male : <input type="radio" [value]="genderM" name="gender" (change)="gen($event)">
-Female : <input type="radio" [value]="genderF" name="gender" (change)="gen($event)">
-<br><br>
-Hobbies:
-Painting : <input type="checkbox" [value]="paintinghobbies" (change)="Hobbies($event)">
-Sketching : <input type="checkbox" [value]="sketchinghobbies" (change)="Hobbies($event)">
-Reading : <input type="checkbox" [value]="readinghobbies" (change)="Hobbies($event)">
-</div>
+<!-- name: <input type="text" [value]='city2' placeholder="Please Enter your name"> -->
+<!-- <br> -->
+<!-- Gender: -->
+<!-- Male : <input type="radio" [value]="genderM" name="gender" (change)="gen($event)"> -->
+<!-- Female : <input type="radio" [value]="genderF" name="gender" (change)="gen($event)"> -->
+<!-- <br> -->
+<!-- Hobbies: -->
+<!-- Painting : <input type="checkbox" [value]="paintinghobbies" (change)="Hobbies($event)"> -->
+<!-- Sketching : <input type="checkbox" [value]="sketchinghobbies" (change)="Hobbies($event)"> -->
+<!-- Reading : <input type="checkbox" [value]="readinghobbies" (change)="Hobbies($event)"> -->
+<!-- <br> -->
+<!-- <button (click)="submit($event)">Submit</button> -->
+<!-- event binding : event binding is used to handle the events raised from the DOM like button click, mouse move etc. When the DOM event happens (eg. click, change, keyup),
+   it calls the specified method in the component.  -->
 
+<!-- Two way data binding: two-way binding has a feature to update data from component to view and vice-versa.
+i.e. Whenever user make changes in the Model, it will be reflected in the View and when user make changes in View, it will be reflected in Model.
+two way data binding, property binding and event binding are combined togethe
 
+Note: For two way data binding, we have to enable the ngModel directive. It depends upon FormsModule in angular/forms package,
+ so we have to add FormsModule in imports[] array in the AppModule.-->
+<!-- <br> --> 
+<!-- Student Name:<input type="text" [(ngModel)]="studentName">
+<p>{{studentName}}</p>
 
+Emp Name: <input type="text" [(ngModel)]="empName">
+<p>{{empName}}</p>
+
+<input type="text" [(ngModel)]="num1">no1 <br>
+<input type="text" [(ngModel)]="num2">no2 <br>
+
+<input type="text" (keyup)="addition1($event)">no1 <br>
+<input type="text" (keyup)="addition2($event)">no2 <br>
+
+<button (click)="addition()">Addition</button>
+<p>{{result}}</p> -->
+
+<!-- </div> -->
+  <!-- <input type="text" [(ngModel)]="num1"> no1 <br>
+  <input type="text" [(ngModel)]="num2"> no2 <br>
+
+  <input type="text" (keyup)="addition1($event)"> no1 <br>
+  <input type="text" (keyup)="addition2($event)"> no2 <br>
+  
+  <button (click)="addition()">Addition</button>
+
+<p>{{result}}</p> -->
+
+<router-outlet></router-outlet>

@@ -1,0 +1,76 @@
+.back-btn{
+    background-color: rgb(152, 249, 56);
+    color: black;
+    padding: 5px 31px;
+    border-radius: 10%;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+p{
+    margin-left: 20px;
+    font-style: italic;
+    color: rgb(250, 38, 38);
+    font-weight: bold;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+.main{
+    height: 95rem;
+    width: 95rem;
+    margin-left: 20px;
+    margin: auto;
+    background-image: url('image.jpeg');
+}
+.ShowAddress-btn{
+    background-color: rgb(135, 241, 162);
+    color: black;
+    padding: 4px 30px;
+    text-decoration: solid;
+    font-weight: bold;
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.showstate-btn{
+    background-color: rgb(135, 241, 162);
+    color: black;
+    padding: 5px 30px;
+    text-decoration: solid;
+    font-weight: bold;
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+li{
+    color: red;
+    font-size: 20px;
+}
+label{
+    margin-left: 20px;
+    color:black;
+    font-size: 25px;
+    font-family: cursive;
+}
+input{
+    margin-left: 20px;
+}
+// table{
+//     border: 1px solid black;
+//     // margin-left: 20px;
+// }
+// td
+// {
+// border-style:solid;
+// border-top:thick double #090000;
+// }
+
+table, th , td  {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    margin-left: 20px;
+    background-color:orange;
+    text-align: center;
+    text-decoration: 20px;
+  }
+

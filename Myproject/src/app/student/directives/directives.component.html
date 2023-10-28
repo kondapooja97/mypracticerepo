@@ -1,0 +1,60 @@
+<div class="main">
+    <p>directives works!</p>
+<!-- structural directives
+1.*ngIf => To add/remove elements from DOM
+2.*ngFor
+3.*ngSwitch -->
+    <button class="ShowAddress-btn" (click)="Toshowaddress()">ShowAddress</button>
+    <button class="showstate-btn" (click)="Toshowstate()">ShowState</button>
+    <div *ngIf="showaddress">
+        <p>Plot no. -110, Hydrabad Road,Solapur</p>
+    </div>
+    <div *ngIf="showstate">
+        <p>Maharashtra</p>
+    </div>
+    <br><br>
+    <p *ngIf="amount">
+        Amount: {{amount}}
+    </p>
+    <p *ngIf="age >= 18 && age <= 60">
+        valid employee
+    </p>
+    <div>
+        <table>
+           
+            <tr>
+                <th *ngFor="let headings of tableheadings">{{headings}}</th>
+            </tr>
+            <tr *ngFor="let students of studentsData">
+                <td>{{students.name}}</td>
+                <td>{{students.age}}</td>
+                <td>{{students.dob}}</td>
+                <td>{{students.city}}</td>
+                <!-- <button>show</button> -->
+            </tr>
+        </table>
+    </div>
+    <br>
+    <input type="text" [(ngModel)]="inputValue">
+    <button (click)="inputBoxVal()">submit</button>
+    <p *ngFor="let value of data">{{value}}</p>
+    <br><br>
+    <div *ngFor="let color of colors">
+        <ul>
+            <li>{{color}}</li>
+        </ul>
+    </div>
+    <div>
+        <ul *ngFor="let student of studentsData">
+            <li>{{student.name}} - {{student.dob}}</li>
+        </ul>
+    </div>
+    <div [ngSwitch]="color">
+        <label><b>Switch Case Example :</b></label>
+        <p *ngSwitchCase="'Green'">Green</p>
+        <p *ngSwitchCase="'yellow'">Yellow</p>
+        <p *ngSwitchCase="'Red'">Red</p>
+        <p *ngSwitchCase="'Pink'">Pink</p>
+    </div>
+    <button class="back-btn" (click)="back()">Back</button>
+</div>

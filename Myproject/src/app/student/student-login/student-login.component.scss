@@ -1,0 +1,93 @@
+ .temp-form-container {
+   //  background-image: url('login page img.jpg');
+    margin: auto;
+    background-color: rgb(248, 166, 33);
+    color: darkgreen;
+    text-align: center;
+    width: 400px;
+    min-height: 300px;
+    padding: 5px 5px;
+    top: 10px;
+    position: relative;
+    border: 2px solid rgb(19, 4, 4);
+    font-style: bold;
+    border-radius: 25px;
+ }
+.main{
+    background-image: url('login.jpeg');
+    height: 900px;
+    width: 95rem;
+    background-repeat:repeat-x;
+
+}
+ .log-in-btn {
+    background-color: green;
+    color: white;
+    border-radius: 20%;
+    padding: 4px 31px;
+ }
+
+ input:focus {
+    background-color: rgb(243, 236, 147);
+ }
+
+ .err {
+    color: red;
+ }
+ .back-btn{
+   background-color: rgb(106, 226, 106);
+   color: white;
+   padding: 5px 31px;
+   border-radius: 20%;
+ }
+ .sub-btn{
+   background-color: rgb(47, 123, 47);
+   color: white;
+   padding: 10px 25px;
+   border-radius: 15%;
+ }
+ .forgot-btn{
+  background-color: rgb(149, 243, 239);
+  color: rgb(253, 0, 0);
+  padding: 10px 10px;
+  border-radius: 25%;
+ }
+ .p-viewer{
+   position: relative;
+   left: -24px;
+   font-size: 20;
+ }
+ .p-viewer-slash{
+   position: relative;
+   left: -24px;
+   font-size: 20;
+ }
+ .p-viewer1{
+   position: relative;
+   left: 80px;
+   top: -30px;
+   right: -30px;
+   font-size: 20;
+ }
+ .p-viewer-slash1{
+   position: relative;
+   left: 80px;
+   top: -30px;
+   right: -30px;
+   font-size: 20;
+ }
+ .p-viewer2{
+  position: relative;
+   left: 80px;
+   top: -30px;
+   right: -30px;
+   font-size: 20;
+ }
+ .p-viewer-slash2{
+  position: relative;
+   left: 80px;
+   top: -30px;
+   right: -30px;
+   font-size: 20;
+ }
+

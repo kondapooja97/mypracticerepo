@@ -7,7 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent {
- constructor(private router:Router){}
+ constructor(private router:Router){
+  
+ }
  
  home(){
   this.router.navigateByUrl('home')
@@ -19,6 +21,15 @@ test(){
 
 gallery(){
   this.router.navigateByUrl('gallery')
+}
+adminmod(){
+  this.router.navigateByUrl('admin/adminLanding')
+}
+BlogLogin(){
+  this.router.navigateByUrl('blog/blog-landing')
+}
+login(){
+  this.router.navigateByUrl('login/studentLanding')
 }
 
 }

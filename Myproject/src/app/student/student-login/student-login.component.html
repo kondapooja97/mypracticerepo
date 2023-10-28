@@ -1,0 +1,71 @@
+<div class="main">
+<div class="temp-form-container">
+    <h2 *ngIf="showLoginForm">Student Login Form</h2>
+    <form #loginForm="ngForm" autocomplete="off" *ngIf="showLoginForm">
+        <div>
+            <label>Username : </label>
+        </div>
+        <div>
+            <input type="text" #userName="ngModel" ngModel name="userName" required pattern="[a-zA-Z ]*$">
+        </div>
+        <span class="err" *ngIf="userName.touched && userName.errors?.['required']">Username is required!</span>
+        <span class="err" *ngIf="userName.touched && userName.errors?.['pattern']">Please enter alphabets only!</span>
+        <div>
+            <label>Password : </label>
+        </div>
+        <div>
+            <input [type]="showPass ? 'text' : 'password'" #password="ngModel" ngModel name="password" required
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d|\W).{8,8}$">
+                <span class="p-viewer" *ngIf="showPass" (click)="showPassword()">
+                    <i class="bi bi-eye"></i>
+                </span>
+                <span class="p-viewer-slash" *ngIf="!showPass">
+                    <i class="bi bi-eye-slash" (click)="showPassword()"></i>
+                </span> 
+        </div>
+        <span class="err" *ngIf="password.touched && password.errors?.['required']">Password is required!</span>
+        <span class="err" *ngIf="password.touched && password.errors?.['pattern']">password should be maximum 8 character's length</span>
+        <br><br>
+        <button class="log-in-btn" (click)="LogIn(loginForm.value)">LogIn</button>
+        <button class="back-btn" (click)="back()">Back</button>
+        <br><br>
+        <button class="forgot-btn" (click)="forgotpassword()">Forgot Password</button>
+    </form> <br>
+<h2 *ngIf="!showLoginForm">Forgot Password Form</h2>
+    <form *ngIf="!showLoginForm" #forgotPasswordForm="ngForm" autocomplete="off">
+
+        New Password <br>
+
+        <input [type]="showPass ? 'text' : 'password'" #newPassword="ngModel" ngModel name="newPassword" required 
+       (blur)="passwordMatch(newPassword.value,confirmPassword.value)"><br>
+       <span class="p-viewer1" *ngIf="showPass" (click)="showPassword()">
+        <i class="bi bi-eye"></i>
+       </span>
+       <span class="p-viewer-slash1" *ngIf="!showPass">
+        <i class="bi bi-eye-slash" (click)="showPassword()"></i>
+       </span>
+        <!--(blur)="newpasswordFieldvalue(newPassword.value);newPasswordMatch()">-->
+        <span class="err" *ngIf="newPassword.touched && newPassword.errors?.['required']">
+            Please enter newpassword is required</span><br>
+
+        Confirm Password <br>
+
+        <input [type]="conshowPassword ? 'text' : 'password'" #confirmPassword="ngModel" ngModel name="confirmPassword" required
+        (blur)="passwordMatch(newPassword.value,confirmPassword.value)"><br>
+        <!-- (blur)="passwordMatch(confirmPassword.value)"> -->
+        <span class="p-viewer2" *ngIf="conshowPassword" (click)="confirmshowPassword()">
+            <i class="bi bi-eye"></i>
+           </span>
+           <span class="p-viewer-slash2" *ngIf="!conshowPassword">
+            <i class="bi bi-eye-slash" (click)="confirmshowPassword()"></i>
+           </span>
+        <span class="err" *ngIf="confirmPassword.touched && confirmPassword.errors?.['required']">
+            Confirm Password is required</span>
+        <br>
+        <span class="err" *ngIf="isMatch">New Password and Confirm Password should match</span>
+        <div>
+            <button class="sub-btn" (click)="submit(forgotPasswordForm.value)" [disabled]="!forgotPasswordForm.valid">Submit</button>
+        </div>
+    </form><br><br>
+</div>
+</div>

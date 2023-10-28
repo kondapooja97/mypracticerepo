@@ -1,0 +1,39 @@
+.main{
+    margin: auto;
+    text-align: center;
+    background-color:mediumaquamarine;
+    height: 800px;
+    padding: 10px;
+    color:red;
+    font-weight: bolder;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.err{
+    color: red;
+}
+form{
+    border:2px solid black;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 10%;
+    margin-top: auto;
+    margin-bottom:auto;
+   }
+.submit{
+    color:black;
+    background-color: dodgerblue;
+}
+.mob-cls{
+    width: 35px;
+}
+.p-viewer{
+    position: relative;
+    left: -24px;
+    font-size: 20px;
+}
+.p-viewer-slash{
+    position: relative;
+    left: -24px;
+    font-size: 20px;
+}

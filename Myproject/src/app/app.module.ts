@@ -10,6 +10,7 @@ import { LandingComponent } from './landing/landing.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { GalleryComponent } from './gallery/gallery.component';
 
+
 @NgModule({
   declarations: [  //components,directives,pipes
     AppComponent, 
@@ -22,6 +23,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

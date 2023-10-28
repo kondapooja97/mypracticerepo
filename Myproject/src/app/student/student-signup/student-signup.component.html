@@ -1,0 +1,83 @@
+<div class="main">
+    <h2 style="color: blue; text-align:center;">Student Signup Form</h2>
+    <form [formGroup]="studentsignupform"><br>
+            <label>Username : </label>
+            <input type="text" formControlName="username" placeholder="Enter UserName"><br>
+            <span class="err" *ngIf="studentsignupform.get('username')?.errors?.['maxlength']">*maximum 10 characters allowed !</span>
+            <span class="err" *ngIf="studentsignupform.get('username')?.errors?.['minlength']">*minimum 5 characters allowed !</span>
+            <span class="err" *ngIf="!studentsignupform.get('username')?.errors?.['maxlength']
+                                  && !studentsignupform.get('username')?.errors?.['minlength']
+                                  && studentsignupform.get('username')?.errors?.['pattern']">Enter alphabets only!
+            </span><br>
+
+        <!-- <label>Password : </label>
+        <input type="password" formControlName="password" placeholder="Enter Password"><br><br> -->
+
+            <label>password :</label>
+        <span>
+            <input [type]="showPass ? 'text' : 'password'" placeholder="Enter Password">
+            <span class="p-viewer" *ngIf="showPass" (click)="showPassword()">
+                <i class="bi bi-eye"></i>
+            </span>
+            <span class="p-viewer-slash" *ngIf="!showPass">
+                <i class="bi bi-eye-slash" (click)="showPassword()"></i>
+            </span>
+        </span>
+        <br><br>
+        <label>Date Of Birth : </label>
+        <input type="text" formControlName="dob" placeholder="dd/mm/yyyy">
+        <span class="err" *ngIf="studentsignupform.get('dob')?.errors?.['pattern']">please enter date in proper format</span><br><br>
+
+        <label>Mobile Number</label>
+        <input type="text"  class="mob-cls" value="+91" maxlength="3">
+        <input type="text" formControlName="mobileno" placeholder="Enter mobile number" maxlength="10"><br>
+        <span class="err" *ngIf="studentsignupform.get('mobileno')?.errors?.['pattern']">Enter numbers only</span><br>
+
+        <label>Email Id : </label>
+        <input type="text" formControlName="emailid" placeholder="Enter email id"><br>
+        <span class="err" *ngIf="studentsignupform.get('emailid')?.errors?.['pattern']">Enter email id</span><br>
+
+        <label>Gender : </label>
+        <input type="radio" formControlName="gender" value="male" (change)="gender()">Male 
+        <input type="radio" formControlName="gender" value="female" (change)="gender()">Female <br>
+        <div class="err" *ngIf="isGenderSelected">Please select gender</div><br>
+
+        <label>States : </label>
+        <span>
+            <select formControlName="state">
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Odisa">Odisa</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Lucknow">Lucknow</option>
+            </select>
+        </span>
+        <br><br>
+        <div>
+            <label> Custom Validations </label>
+        </div>
+        <div>
+            <input type="text" formControlName="customval"><br><br>
+            <span class="err" *ngIf="studentsignupform.get('customval')?.dirty
+                        && studentsignupform.get('customval')?.errors?.['whitespace']">please don't enter white spaces</span>
+        </div>
+        <div>
+            <label> old word validations </label>
+        </div>
+        <div>
+            <input type="text" formControlName="oldfield">
+            <span class="err" *ngIf="studentsignupform.get('oldfield')?.errors?.['oldWord']">Do not write old word in this text
+                box</span>
+        </div>
+        <br>
+            <input type="checkbox" formControlName="TC">Please accept terms and conditions <br>
+            <span class="err" *ngIf="studentsignupform.get('TC')?.invalid && 
+                        (studentsignupform.get('TC')?.touched ||studentsignupform.get('TC')?.dirty)">Please accept terms and
+                conditions</span><br><br>
+      
+        <button class="submit" (click)="submit()" [disabled]="!studentsignupform.valid">Signup</button>
+        <button (click)="back()">Back</button><br><br>
+        </form>
+        </div>
+
+

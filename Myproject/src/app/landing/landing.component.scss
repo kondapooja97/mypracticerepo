@@ -1,28 +1,55 @@
 .main{
-    background-image: url('cute doll.jpg');
+    background-image: url('pic.jpeg');
     height: 1000px;
+    width: 95rem;
     background-repeat: repeat;
 }
+nav{
+    width: 140px;
+    padding: 10px;
+}
+ul{
+    float: left;   
+    list-style-type: none;
+    padding: 10px;
+}
+ul li{
+    display: inline-block;
+}
+// li button{
+//     padding: 10px;
+// }
 .home-btn{
-    font-size: xx-large;
+    font-size:20px;
     background-color: chartreuse;
     border-radius: 25%;
     border-color: lightseagreen;
-    box-shadow: blueviolet;
+    font-weight: bolder;
+    font-style: italic;
+    padding-left: 4px 30px;
+    margin-left: 15px;
 }
 
 .test-btn{
     background-color: darkcyan;
-    font-size:xx-large;
+    font-size:20px;
     border-radius: 25%;
+    padding-left:  4px 35px;
+    margin-left: 15px;
+    font-weight: bolder;
+    font-style: italic;
+    
 }
 .gallery-btn{
     background-color: darkorange;
     font-style: italic;
-    font-size: x-large;
-    // border-radius: 50%;
-    // border: none;
-    // background-clip: padding-box;
-    font: 100;
-    font-weight:bold;
+    font-size:20px;
+    border-radius: 25%;
+    padding-left:  4px 40px;
+    margin-left: 15px;
+    font-weight: bolder;
+    font-style: italic;   
+}
+button{
+    text-decoration: none;
 }

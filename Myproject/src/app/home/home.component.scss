@@ -1,10 +1,23 @@
 .home-main{
     height: 1000px;
-    width: 90rem;
-    background-image: url('cat.jpg');
+    width: 95rem;
+    background-image: url('img.jpeg');
 }
 .btn-cls{
     border-radius: 25%;
     background-color: chartreuse;
     font-size: x-large;
+}
+p{
+    font-size: 30px;
+    font-style:italic;
+    font-weight: bold;
+    padding: 10px;
+    color: red;
+}
+.home-main button{
+    margin-left: 10px;
+}
+button{
+    cursor: pointer;
 }

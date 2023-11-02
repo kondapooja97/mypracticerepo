@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-constructor(private router:Router){}
+  inpVal:any;
+constructor(private router:Router,private dataService:DataService){}
+
+  ngOnInit(){
+    this.inpVal=this.dataService.inputBox;
+  }
 
 back(){
   this.router.navigateByUrl('landing')

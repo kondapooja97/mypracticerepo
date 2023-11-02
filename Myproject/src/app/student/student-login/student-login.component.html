@@ -26,7 +26,7 @@
         <span class="err" *ngIf="password.touched && password.errors?.['required']">Password is required!</span>
         <span class="err" *ngIf="password.touched && password.errors?.['pattern']">password should be maximum 8 character's length</span>
         <br><br>
-        <button class="log-in-btn" (click)="LogIn(loginForm.value)">LogIn</button>
+        <button class="log-in-btn" (click)="submit(loginForm.value)">Submit</button>
         <button class="back-btn" (click)="back()">Back</button>
         <br><br>
         <button class="forgot-btn" (click)="forgotpassword()">Forgot Password</button>

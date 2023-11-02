@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-student-login',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./student-login.component.scss']
 })
 export class StudentLoginComponent {
-  constructor(private route: Router) { }
+  constructor(private route: Router,private dataService:DataService) { }
   userName: any
   // forGotpassword = false
   showLoginForm=true
@@ -20,9 +21,9 @@ export class StudentLoginComponent {
   back() {
     this.route.navigateByUrl('home')
   }
-  LogIn(form: any) {
-    console.log(form);
-  }
+  // submit(form: any) {
+  //   console.log(form);
+  // }
   forgotpassword() {
     this.showLoginForm = false;
   }
@@ -61,8 +62,9 @@ export class StudentLoginComponent {
   //   }
   // }
 
-  submit(form: any) {
-    console.log(form);
+  submit(formdata: any) {
+    console.log(formdata);
+    this.dataService.formUserName=formdata.userName;
     this.route.navigateByUrl('studentmod/studentsuccess')
   }
 }

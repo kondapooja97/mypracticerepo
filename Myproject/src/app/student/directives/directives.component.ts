@@ -11,6 +11,7 @@ export class DirectivesComponent {
   amount = 1000;  //boolean true-true; data-true; null/undefined - false;
   // amount=undefined
   age=60;
+  rating=4;
   inputValue:any
   data:any[]=[];
   color="yellow";
@@ -38,6 +39,9 @@ export class DirectivesComponent {
   inputBoxVal(){
     console.log(this.inputValue);
     this.data.push(this.inputValue)
+  }
+  getCss() {
+    return 'yellow';
   }
   back() {
     this.router.navigateByUrl('login/studentsuccess')

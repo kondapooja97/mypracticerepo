@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-student-success',
@@ -7,11 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./student-success.component.scss']
 })
 export class StudentSuccessComponent {
-
-  constructor(private router:Router){}
+name:any;
+  constructor(private router:Router,private dataService:DataService){}
 
   back(){
     this.router.navigateByUrl('/login/studentlogin')
   }
-
+ngOnInit(){
+  this.name=this.dataService.formUserName;
+}
  }

@@ -1,6 +1,6 @@
 <div class="main">
     <p>directives works!</p>
-<!-- structural directives
+    <!-- structural directives
 1.*ngIf => To add/remove elements from DOM
 2.*ngFor
 3.*ngSwitch -->
@@ -21,7 +21,7 @@
     </p>
     <div>
         <table>
-           
+
             <tr>
                 <th *ngFor="let headings of tableheadings">{{headings}}</th>
             </tr>
@@ -56,5 +56,22 @@
         <p *ngSwitchCase="'Red'">Red</p>
         <p *ngSwitchCase="'Pink'">Pink</p>
     </div>
+    <div [class.cls1]="inputValue == 40" 
+         [class.cls2]="inputValue == 50"
+         [class.cls3]="inputValue == 60">
+        I scrored 90 marks...
+    </div>
+    <div [ngClass]="rating == 4 ? 'ngcls1' : 'ngcls2' ">
+        I like pune
+    </div>
+
+
+    <p style=" background-color: antiquewhite;">
+        nbkjbkj knjnjn
+    </p>
+
+    <p [ngStyle]="{'background-color':getCss()}">
+        nbkjbkj knjnjn
+    </p>
     <button class="back-btn" (click)="back()">Back</button>
 </div>

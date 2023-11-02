@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-landing',
@@ -7,11 +8,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent {
- constructor(private router:Router){
+  inputboxValue:any;
+ constructor(private router:Router,private dataService:DataService){
   
  }
  
  home(){
+  console.log(this.inputboxValue);
+  this.dataService.inputBox=this.inputboxValue;  //set
   this.router.navigateByUrl('home')
  }
 

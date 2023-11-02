@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-student-signup',
@@ -8,7 +9,7 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./student-signup.component.scss']
 })
 export class StudentSignupComponent {
-  // constructor(private route:Router){}
+  
 
   studentsignupform!: FormGroup;
 
@@ -17,7 +18,7 @@ export class StudentSignupComponent {
   isGenderSelected: boolean = false;
   showPass = false;
 
-  constructor(public fb: FormBuilder, private route: Router) { }
+  constructor(public fb: FormBuilder, private route: Router,private dataService:DataService) { }
 
   ngOnInit() {
     this.formDetails();
@@ -36,18 +37,14 @@ export class StudentSignupComponent {
       gender: [''],
       TC: [false, [Validators.requiredTrue]],
       state: [''],
-      customval: ['', this.removeWhitespace],
+      customval: ['', this.dataService.removeWhitespace],
       oldfield: ['', this.oldwordRestriction]
     })
   }
   showPassword() {
     this.showPass = !this.showPass;
   }
-  removeWhitespace(customValFieldValue: any) {
-    console.log(customValFieldValue);
-    let isInvalid = customValFieldValue.value ? customValFieldValue.value?.trim().length == 0 : null;
-    return isInvalid ? { 'whitespace': true } : null;
-  }
+  
   oldwordRestriction(inputValue: any) {
     let inputvalue1 = inputValue.value?.toLowerCase().split(' ');
     let isoldinclude = inputvalue1.includes('old');

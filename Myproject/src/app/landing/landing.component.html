@@ -1,10 +1,16 @@
 <nav class="main">
     <ul>
-        <li> <button (click)="home()" class="home-btn">Home</button>   </li>
-        <li><button (click)="test()" class="test-btn">Test</button>    </li>
-        <li> <button (click)="gallery()" class="gallery-btn">Gallery</button>   </li><br><br>
+        <!-- services in angular -->
+        <input type="text" [(ngModel)]="inputboxValue" placeholder="Type any text here..."> <br><br>
+        <li> <button (click)="home()" class="home-btn">Home</button></li>
+        <li><button (click)="test()" class="test-btn">Test</button></li>
+        <li> <button (click)="gallery()" class="gallery-btn">Gallery</button></li><br><br>
+        <br>
+        <button routerLink="/studentmod/parent">parent component</button>
+        <br><br><br>
         <button (click)="adminmod()">Admin</button><br><br>
         <button (click)="BlogLogin()">BlogLogin</button><br><br>
+        
     </ul>
 </nav>
 

@@ -7,6 +7,8 @@ import { StudentSignupComponent } from './student-signup/student-signup.componen
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StudentSuccessComponent } from './student-success/student-success.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 // console.log('student');
 
 
@@ -16,6 +18,8 @@ import { DirectivesComponent } from './directives/directives.component';
     StudentSignupComponent,
     StudentSuccessComponent,
     DirectivesComponent,
+    ParentComponent,
+    ChildComponent,
     
 
   ],

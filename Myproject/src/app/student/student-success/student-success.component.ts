@@ -11,6 +11,10 @@ export class StudentSuccessComponent {
 name:any;
   constructor(private router:Router,private dataService:DataService){}
 
+  setSubData(){
+    this.dataService.city.next("Pandharpur");
+  }
+
   back(){
     this.router.navigateByUrl('/login/studentlogin')
   }

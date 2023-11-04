@@ -17,7 +17,7 @@ export class StudentLoginComponent {
   isMatch: boolean = false
   showPass=false
   conshowPassword=false
-
+  
   back() {
     this.route.navigateByUrl('home')
   }

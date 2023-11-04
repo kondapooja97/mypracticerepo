@@ -1,6 +1,14 @@
-    <p>parent works!</p>
-   
+<p>parent works!</p>
+
 Name : <input type="text" [(ngModel)]="name"><br><br>
+{{datafromchildCompo}} <br>
+<button (click)="setsubjectData()">click to set subject</button><br>
 ***********************************************
-<br><br>
-<app-child [dataFromParentCompo]="name"></app-child>
+<br>
+<app-child [dataFromParentCompo]="name" (childDataevent)="datafromchild($event)" [colorsfromParent]="colors"></app-child>
+
+<br>
+************************************************
+<br>
+<app-student-success></app-student-success>
+

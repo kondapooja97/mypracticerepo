@@ -7,10 +7,22 @@
         <li> <button (click)="gallery()" class="gallery-btn">Gallery</button></li><br><br>
         <br>
         <button routerLink="/studentmod/parent">parent component</button>
-        <br><br><br>
+        <br><br>
         <button (click)="adminmod()">Admin</button><br><br>
         <button (click)="BlogLogin()">BlogLogin</button><br><br>
-        
+        <button (click)="subjectbtn()">click suject</button>
+        <br><br>
+        <div>
+            {{name | uppercase}} <br>
+            {{name | lowercase}} <br>
+            {{date1}} <br>
+            {{date1 | date}} <br>
+            {{date1 | date : 'dd/MM/yyyy'}} <br>
+            {{date1 | date : 'shortDate'}} <br>
+        </div>
+        <br>
+        <button routerLink="/table">Table</button>
     </ul>
 </nav>
-
+{{date1 | date : 'fullDate'}} <br>
+{{date1 | date : 'shortDate'}} <br>

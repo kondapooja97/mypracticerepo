@@ -1,0 +1,25 @@
+<p>subject-landing works!</p>
+<form [formGroup]="subjectForm">
+    <div>Name :</div>
+    <input type="text" formControlName="name">
+    <div>Password :</div>
+    <input type="text" formControlName="password">
+    <div>
+        <button (click)="submit()">Submit</button>
+    </div>
+    
+    <button (click)="viewchild()">View Child</button>
+</form>
+<div #para>
+    <p>pooja</p>
+</div>
+
+************************************************** <br>
+<app-subject1></app-subject1>
+
+
+<br>
+************************************************** <br>
+<app-subject2></app-subject2>
+
+

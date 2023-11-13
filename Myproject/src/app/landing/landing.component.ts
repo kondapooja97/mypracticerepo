@@ -8,32 +8,37 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent {
-  inputboxValue:any;
- constructor(private router:Router,private dataService:DataService){
-  
- }
- 
- home(){
-  console.log(this.inputboxValue);
-  this.dataService.inputBox=this.inputboxValue;  //set
-  this.router.navigateByUrl('home')
- }
+  inputboxValue: any;
+  name: string = "pooja";
+  date1 :string = "19-04-1992";
+  constructor(private router: Router, private dataService: DataService) {
 
-test(){
-  this.router.navigateByUrl('test')
-}
+  }
 
-gallery(){
-  this.router.navigateByUrl('gallery')
-}
-adminmod(){
-  this.router.navigateByUrl('admin/adminLanding')
-}
-BlogLogin(){
-  this.router.navigateByUrl('blog/blog-landing')
-}
-login(){
-  this.router.navigateByUrl('login/studentLanding')
-}
+  home() {
+    console.log(this.inputboxValue);
+    this.dataService.inputBox = this.inputboxValue;  //set
+    this.router.navigateByUrl('home')
+  }
 
+  test() {
+    this.router.navigateByUrl('test')
+  }
+
+  gallery() {
+    this.router.navigateByUrl('gallery')
+  }
+  adminmod() {
+    this.router.navigateByUrl('admin/adminLanding')
+  }
+  BlogLogin() {
+    this.router.navigateByUrl('blog/blog-landing')
+  }
+  login() {
+    this.router.navigateByUrl('login/studentLanding')
+  }
+  subjectbtn() {
+
+    this.router.navigateByUrl('subjectmod/subjectlanding');
+  }
 }

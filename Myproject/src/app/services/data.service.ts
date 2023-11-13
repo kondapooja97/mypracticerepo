@@ -9,6 +9,7 @@ export class DataService {
   formUserName:any;
   inputBox:any;
   city=new Subject<any>();
+  namesubjectdata=new Subject<string>();
 
   constructor() { }
 

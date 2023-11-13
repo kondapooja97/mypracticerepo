@@ -70,6 +70,8 @@
                 box</span>
         </div>
         <br>
+        <input type="text" maxlength="15" appCharonly>char only directive
+        <br><br>
             <input type="checkbox" formControlName="TC">Please accept terms and conditions <br>
             <span class="err" *ngIf="studentsignupform.get('TC')?.invalid && 
                         (studentsignupform.get('TC')?.touched ||studentsignupform.get('TC')?.dirty)">Please accept terms and
@@ -77,6 +79,7 @@
       
         <button class="submit" (click)="submit()" [disabled]="!studentsignupform.valid">Signup</button>
         <button (click)="back()">Back</button><br><br>
+
         </form>
         </div>
 

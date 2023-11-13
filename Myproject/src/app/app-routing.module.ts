@@ -6,10 +6,12 @@ import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AdminModule } from './admin/admin.module';
+import { TableComponent } from './pipes/table/table.component';
 
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
+  {path:'table',component:TableComponent},
   { path: 'home', component: HomeComponent },
   { path: 'landing', component: LandingComponent },
   { path: 'gallery', component: GalleryComponent }, 
@@ -18,6 +20,7 @@ const routes: Routes = [
   { path:'login',loadChildren:()=>import('./student/student.module').then(mod=>mod.StudentModule)},
   { path:'signup',loadChildren:()=>import('./student/student.module').then(mod=>mod.StudentModule)},
   {path:'studentmod',loadChildren:()=>import('./student/student.module').then(mod=>mod.StudentModule)},
+  {path:'subjectmod',loadChildren:()=>import('./subject/subject.module').then(mod=>mod.SubjectModule)},
 
   { path: '**', component: PagenotfoundComponent }   //wild card routing
 ];

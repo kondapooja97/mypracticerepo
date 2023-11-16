@@ -1,19 +1,48 @@
 {
-  "posts": [
+  "principal": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "pooja",
+      "city": "solapur",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "username": "pooja",
+      "password": "",
+      "mobileno": "7894561237",
+      "emailid": "poojakonda97@gmail.com",
+      "dob": "10/08/1997",
+      "gender": "female",
+      "TC": true,
+      "state": "Maharashtra",
+      "customval": "gghgh",
+      "oldfield": "hfghf ofldold olajkjkasjdjdaolsdo ",
+      "id": 2
+    },
+    {
+      "username": "pooja",
+      "password": "",
+      "mobileno": "7894561237",
+      "emailid": "poojakonda97@gmail.com",
+      "dob": "10/08/1997",
+      "gender": "female",
+      "TC": true,
+      "state": "Maharashtra",
+      "customval": "gghgh",
+      "oldfield": "hfghf ofldold olajkjkasjdjdaolsdo ",
+      "id": 3
+    },
+    {
+      "username": "pooja",
+      "password": "",
+      "mobileno": "7894561237",
+      "emailid": "poojakonda97@gmail.com",
+      "dob": "10/08/1997",
+      "gender": "female",
+      "TC": true,
+      "state": "Maharashtra",
+      "customval": "gghgh",
+      "oldfield": "hfghf ofldold olajkjkasjdjdaolsdo ",
+      "id": 4
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

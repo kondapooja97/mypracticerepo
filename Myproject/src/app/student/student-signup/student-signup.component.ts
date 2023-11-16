@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
+import { ApicallService } from 'src/app/services/apicall.service';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./student-signup.component.scss']
 })
 export class StudentSignupComponent {
-  
+
 
   studentsignupform!: FormGroup;
 
@@ -18,7 +19,7 @@ export class StudentSignupComponent {
   isGenderSelected: boolean = false;
   showPass = false;
 
-  constructor(public fb: FormBuilder, private route: Router,private dataService:DataService) { }
+  constructor(public fb: FormBuilder, private route: Router, private dataService: DataService, private apiCallService: ApicallService) { }
 
   ngOnInit() {
     this.formDetails();
@@ -44,7 +45,7 @@ export class StudentSignupComponent {
   showPassword() {
     this.showPass = !this.showPass;
   }
-  
+
   oldwordRestriction(inputValue: any) {
     let inputvalue1 = inputValue.value?.toLowerCase().split(' ');
     let isoldinclude = inputvalue1.includes('old');
@@ -54,6 +55,10 @@ export class StudentSignupComponent {
     let gender = this.studentsignupform.value.gender;
     if (gender) {
       console.log('form data', this.studentsignupform.value);
+      this.apiCallService.postApiCall(this.studentsignupform.value).subscribe(response => {
+        console.log("res >>", response);
+
+      });
     }
     else {
       this.isGenderSelected = true;

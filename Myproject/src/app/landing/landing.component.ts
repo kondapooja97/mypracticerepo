@@ -10,7 +10,7 @@ import { DataService } from '../services/data.service';
 export class LandingComponent {
   inputboxValue: any;
   name: string = "pooja";
-  date1 :string = "19-04-1992";
+  date :string = "19-04-1992";
   constructor(private router: Router, private dataService: DataService) {
 
   }

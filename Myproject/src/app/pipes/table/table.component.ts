@@ -20,4 +20,5 @@ export class TableComponent {
     { name: 'Rukshita', age:'15',dob: '05/05/2008',city:'akkalkot'}];
 
     searchedValue:any;
+    amount:any
 }

@@ -4,8 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CharonlyDirective } from '../directives/charonly.directive';
 import { CurrencyPipe } from '../pipes/currency.pipe';
 import { SearchPipe } from '../pipes/search.pipe';
-
-
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -17,14 +16,16 @@ import { SearchPipe } from '../pipes/search.pipe';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   exports:[
     ReactiveFormsModule,
     FormsModule,
     CharonlyDirective,
     CurrencyPipe,
-    SearchPipe
+    SearchPipe,
+    HttpClientModule
   ]
 })
 export class SharedModule { }

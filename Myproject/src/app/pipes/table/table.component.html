@@ -13,3 +13,5 @@
         <td>{{student.city}}</td>
     </tr>
 </table>
+<input type="text" [(ngModel)]="amount">Amount
+<p *ngIf="amount">{{amount | currency}} $ </p>

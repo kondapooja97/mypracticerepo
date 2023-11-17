@@ -15,7 +15,7 @@
 
             <label>password :</label>
         <span>
-            <input [type]="showPass ? 'text' : 'password'" placeholder="Enter Password">
+            <input [type]="showPass ? 'text' : 'password'" formControlName="password1" placeholder="Enter Password" >
             <span class="p-viewer" *ngIf="showPass" (click)="showPassword()">
                 <i class="bi bi-eye"></i>
             </span>

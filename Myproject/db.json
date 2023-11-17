@@ -43,6 +43,87 @@
       "customval": "gghgh",
       "oldfield": "hfghf ofldold olajkjkasjdjdaolsdo ",
       "id": 4
+    },
+    {
+      "username": "aranya",
+      "Password": "",
+      "password": "konda123",
+      "mobileno": "1234567895",
+      "emailid": "aranya22@gmail.com",
+      "dob": "22/08/2023",
+      "gender": "female",
+      "TC": true,
+      "state": "Tamilnadu",
+      "customval": "dsdad",
+      "oldfield": "gdgfd",
+      "id": 5
+    },
+    {
+      "username": "kavita",
+      "Password": "",
+      "password": "",
+      "mobileno": "7894561235",
+      "emailid": "poojakonda97@gmail.com",
+      "dob": "01/04/2022",
+      "gender": "female",
+      "TC": true,
+      "state": "Maharashtra",
+      "customval": "adsgfa",
+      "oldfield": "gsghdgahga",
+      "password1": "konda#21345",
+      "id": 6
+    },
+    {
+      "username": "Naresh",
+      "mobileno": "4563217894",
+      "emailid": "naresh1234@gmail.com",
+      "dob": "19/06/1890",
+      "gender": "male",
+      "TC": true,
+      "state": "Bihar",
+      "customval": "sad",
+      "oldfield": "daff",
+      "password1": "konda12345",
+      "id": 7
+    },
+    {
+      "username": "pooja",
+      "mobileno": "4563217894",
+      "emailid": "naresh1234@gmail.com",
+      "dob": "19/06/1890",
+      "gender": "female",
+      "TC": true,
+      "state": "Odisa",
+      "customval": "sad",
+      "oldfield": "daff",
+      "password1": "konda@1234",
+      "id": 8
+    },
+    {
+      "username": "rukshita",
+      "mobileno": "4567891236",
+      "emailid": "prabhukondama@gmail.com",
+      "dob": "05/07/1992",
+      "gender": "female",
+      "TC": true,
+      "state": "Lucknow",
+      "customval": "asd",
+      "oldfield": "fdsadfad",
+      "password1": "konda#122345",
+      "id": 9
+    },
+    {
+      "username": "sravani",
+      "password1": "bonal@123",
+      "mobileno": "1234569875",
+      "emailid": "sravani123@gmail.com",
+      "dob": "29/11/2010",
+      "gender": "female",
+      "TC": true,
+      "state": "Bihar",
+      "customval": "asd",
+      "oldfield": "sad",
+      "id": 10
     }
   ]
 }

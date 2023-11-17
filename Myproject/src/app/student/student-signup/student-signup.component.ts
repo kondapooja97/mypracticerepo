@@ -19,7 +19,7 @@ export class StudentSignupComponent {
   isGenderSelected: boolean = false;
   showPass = false;
 
-  constructor(public fb: FormBuilder, private route: Router, private dataService: DataService, private apiCallService: ApicallService) { }
+  constructor(public fb: FormBuilder, private route: Router, private dataService: DataService, private apiCallService: ApicallService,public router:Router) { }
 
   ngOnInit() {
     this.formDetails();
@@ -30,8 +30,9 @@ export class StudentSignupComponent {
   formDetails() {
     this.studentsignupform = this.fb.group({
       username: ['', [Validators.maxLength(10), Validators.minLength(5), Validators.pattern('[a-zA-Z]+')]],
+      password1:[],
       // Password:['',[Validators.maxLength(10)]],
-      password: ['', this.showPassword],
+      // password: ['', this.showPassword],
       mobileno: ['', [Validators.pattern('[0-9+]*')]],
       emailid: ['', [Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]],
       dob: ['', [Validators.pattern(this.datePattern)]],
@@ -39,7 +40,8 @@ export class StudentSignupComponent {
       TC: [false, [Validators.requiredTrue]],
       state: [''],
       customval: ['', this.dataService.removeWhitespace],
-      oldfield: ['', this.oldwordRestriction]
+      oldfield: ['', this.oldwordRestriction],
+      
     })
   }
   showPassword() {
@@ -57,7 +59,9 @@ export class StudentSignupComponent {
       console.log('form data', this.studentsignupform.value);
       this.apiCallService.postApiCall(this.studentsignupform.value).subscribe(response => {
         console.log("res >>", response);
-
+        if(response)
+          alert('Data Submitted Successfully...');
+        this.router.navigateByUrl('/studentmod/studentsuccess');
       });
     }
     else {

@@ -10,7 +10,8 @@ export class DataService {
   inputBox:any;
   city=new Subject<any>();
   namesubjectdata=new Subject<string>();
-
+  recordTobeUpdate:any;
+  idToUpdate: any;
   constructor() { }
 
   removeWhitespace(customValFieldValue: any) {

@@ -16,32 +16,6 @@
       "state": "Maharashtra",
       "customval": "gghgh",
       "oldfield": "hfghf ofldold olajkjkasjdjdaolsdo ",
-      "id": 2
-    },
-    {
-      "username": "pooja",
-      "password": "",
-      "mobileno": "7894561237",
-      "emailid": "poojakonda97@gmail.com",
-      "dob": "10/08/1997",
-      "gender": "female",
-      "TC": true,
-      "state": "Maharashtra",
-      "customval": "gghgh",
-      "oldfield": "hfghf ofldold olajkjkasjdjdaolsdo ",
-      "id": 3
-    },
-    {
-      "username": "pooja",
-      "password": "",
-      "mobileno": "7894561237",
-      "emailid": "poojakonda97@gmail.com",
-      "dob": "10/08/1997",
-      "gender": "female",
-      "TC": true,
-      "state": "Maharashtra",
-      "customval": "gghgh",
-      "oldfield": "hfghf ofldold olajkjkasjdjdaolsdo ",
       "id": 4
     },
     {
@@ -88,15 +62,16 @@
     },
     {
       "username": "pooja",
-      "mobileno": "4563217894",
-      "emailid": "naresh1234@gmail.com",
+      "password1": "konda@1234",
+      "mobileno": "9922083954",
+      "emailid": "pooja123@gmail.com",
       "dob": "19/06/1890",
       "gender": "female",
       "TC": true,
-      "state": "Odisa",
+      "state": "Lucknow",
       "customval": "sad",
-      "oldfield": "daff",
-      "password1": "konda@1234",
+      "oldfield": "olddold olddd Oldd",
+      "characteronly": "poooooo",
       "id": 8
     },
     {

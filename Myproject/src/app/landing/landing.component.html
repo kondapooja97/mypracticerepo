@@ -4,14 +4,21 @@
         <input type="text" [(ngModel)]="inputboxValue" placeholder="Type any text here..."> <br><br>
         <li> <button (click)="home()" class="home-btn">Home</button></li>
         <li><button (click)="test()" class="test-btn">Test</button></li>
-        <li> <button (click)="gallery()" class="gallery-btn">Gallery</button></li><br><br>
-        <br>
+        <li> <button (click)="gallery()" class="gallery-btn">Gallery</button></li><br>
         <button routerLink="/studentmod/parent">parent component</button>
         <br><br>
         <button (click)="adminmod()">Admin</button><br><br>
         <button (click)="BlogLogin()">BlogLogin</button><br><br>
         <button (click)="subjectbtn()">click suject</button>
+        <br><br><br>
+        <div *ngFor="let data of studentData">
+            {{data.username}}
+        </div>
+        <button (click)="getApi()">GET API</button>
         <br><br>
+        <button (click)="deleteApi()">DELETE API</button>
+        <br><br>
+        <button (click)="putApi()">PUT API</button>
         <div>
             {{name | uppercase}} <br>
             {{name | lowercase}} <br>

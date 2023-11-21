@@ -18,10 +18,16 @@ export class StudentSignupComponent {
   datePattern = /^(0[1-9]|[1-2][0-9]|3[0-1])\/(0[1-9]|1[0-2])\/\d{4}$/;
   isGenderSelected: boolean = false;
   showPass = false;
+  recordToUpdate: any;
+  id:any;
 
-  constructor(public fb: FormBuilder, private route: Router, private dataService: DataService, private apiCallService: ApicallService,public router:Router) { }
+  constructor(public fb: FormBuilder, private route: Router, private dataService: DataService, private apiCallService: ApicallService, public router: Router) { }
 
   ngOnInit() {
+    this.recordToUpdate = this.dataService.recordTobeUpdate;
+    this.id=this.dataService.idToUpdate;
+    console.log("Record update", this.recordToUpdate);
+
     this.formDetails();
     console.log(this.todayDate);
 
@@ -29,19 +35,19 @@ export class StudentSignupComponent {
 
   formDetails() {
     this.studentsignupform = this.fb.group({
-      username: ['', [Validators.maxLength(10), Validators.minLength(5), Validators.pattern('[a-zA-Z]+')]],
-      password1:[],
+      username: [this.recordToUpdate ? this.recordToUpdate.username : '', [Validators.maxLength(10), Validators.minLength(5), Validators.pattern('[a-zA-Z]+')]],
+      password1: [this.recordToUpdate ? this.recordToUpdate.password1 : ''],
       // Password:['',[Validators.maxLength(10)]],
       // password: ['', this.showPassword],
-      mobileno: ['', [Validators.pattern('[0-9+]*')]],
-      emailid: ['', [Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]],
-      dob: ['', [Validators.pattern(this.datePattern)]],
-      gender: [''],
-      TC: [false, [Validators.requiredTrue]],
-      state: [''],
-      customval: ['', this.dataService.removeWhitespace],
-      oldfield: ['', this.oldwordRestriction],
-      
+      mobileno: [this.recordToUpdate ? this.recordToUpdate.mobileno : '', [Validators.pattern('[0-9+]*')]],
+      emailid: [this.recordToUpdate ? this.recordToUpdate.emailid : '', [Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)]],
+      dob: [this.recordToUpdate ? this.recordToUpdate.dob : '', [Validators.pattern(this.datePattern)]],
+      gender: [this.recordToUpdate ? this.recordToUpdate.gender : ''],
+      TC: [this.recordToUpdate ? this.recordToUpdate.TC : '', [Validators.requiredTrue]],
+      state: [this.recordToUpdate ? this.recordToUpdate.state  : ''],
+      customval: [this.recordToUpdate ? this.recordToUpdate.customval : '', this.dataService.removeWhitespace],
+      oldfield: [this.recordToUpdate ? this.recordToUpdate.oldfield : '', this.oldwordRestriction],
+      characteronly:[this.recordToUpdate ? this.recordToUpdate.characteronly : '']
     })
   }
   showPassword() {
@@ -59,7 +65,7 @@ export class StudentSignupComponent {
       console.log('form data', this.studentsignupform.value);
       this.apiCallService.postApiCall(this.studentsignupform.value).subscribe(response => {
         console.log("res >>", response);
-        if(response)
+        if (response)
           alert('Data Submitted Successfully...');
         this.router.navigateByUrl('/studentmod/studentsuccess');
       });
@@ -76,5 +82,12 @@ export class StudentSignupComponent {
 
   back() {
     this.route.navigateByUrl('home')
+  }
+  update(){
+  this.apiCallService.putApiCall(this.id,this.studentsignupform.value).subscribe(res=>{
+    console.log(res);
+  })
+  alert('Data Updated Successfully...');
+    this.router.navigateByUrl('/studentmod/studentsuccess');
   }
 }

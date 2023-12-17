@@ -1,0 +1,50 @@
+<body>
+    <button mat-button color="warn" routerLink="/admin/adminlanding">Back</button>
+    <div class="main">
+        <h3><i><b>SignUp to create an account</b></i></h3>
+        <form [formGroup]="adminSignUpform">
+            <mat-form-field class="input">
+                <mat-label>Enter Name</mat-label>
+                <input type="text" matInput formControlName="username" placeholder="Enter your name">
+                <mat-error>Name is required!</mat-error>
+            </mat-form-field><br>
+
+            <mat-form-field class="input">
+                <mat-label>Enter Email</mat-label>
+                <input type="text" matInput formControlName="useremail" placeholder="pat@example.com">
+                <mat-error>Email is required!</mat-error>
+            </mat-form-field><br>
+
+            <mat-form-field class="input">
+                <mat-label>Enter Mobile</mat-label>
+                <input type="text" matInput formControlName="usermobile" placeholder="Enter your mobile number">
+                <mat-error>enter only 10 digit number!</mat-error>
+            </mat-form-field><br>
+
+            <mat-form-field class="input">
+                <mat-label>Enter Password</mat-label>
+                <input [type]="showpass ? 'text' : 'password'" matInput formControlName="userpass" placeholder="Enter password">
+                <mat-icon (click)="showpassword()" matSuffix>visibility_off</mat-icon>
+                <mat-error>password is required!</mat-error>
+            </mat-form-field><br>
+
+            <mat-form-field class="input">
+                <mat-label>Confirm Password</mat-label>
+                <input [type]="showconfirmpass ? 'text': 'password'" matInput formControlName="userconfpass" placeholder="Enter Confirm password">
+                <mat-icon (click)="showconfpass()" matSuffix>visibility_off</mat-icon>
+                <mat-error>confirm password is required!</mat-error>
+            </mat-form-field><br>
+
+            <mat-radio-group formControlName="gender">
+                <mat-label><i>Select gender</i></mat-label>
+                <mat-radio-button value="male"><i>Male</i></mat-radio-button>
+                <mat-radio-button value="female"><i>Female</i></mat-radio-button>
+                <mat-radio-button value="other"><i>Other</i></mat-radio-button>
+            </mat-radio-group><br>
+            <mat-checkbox formControlName="userCheck"><i>Accept Terms & Conditions</i></mat-checkbox><br>
+           <button mat-raised-button color="warn" (click)="signup()">Signup</button><br><br>
+           <div>Already have member? &nbsp;&nbsp;<span style="color: red;" routerLink="/admin/adminsignin"><i>Sign in here</i></span></div>
+        </form>
+    </div> 
+</body>
+

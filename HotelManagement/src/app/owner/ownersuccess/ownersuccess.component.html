@@ -1,0 +1,34 @@
+<body>
+    <div>
+        <button class="btn" mat-button color="warn" routerLink="/owner/ownerlanding">Back</button>
+        <button class="btn" mat-raised-button color="primary" (click)="newHotelRegistration()"
+            routerLink="/owner/ownersignin">New Hotel Registration</button>&nbsp;
+        <button class="btn" mat-raised-button color="warn" (click)="showHotelDetails()">Hotel List</button>
+        <div>
+            <input type="text" class="searchbox" [(ngModel)]="searchText" placeholder="search hotel list">
+        </div>
+        
+    </div>
+    <div *ngIf="showRecord">
+        <h2>View Hotel List</h2>
+        <table border="2px black">
+            <tr>
+                <th *ngFor="let heading of headings">{{heading}}</th>
+            </tr>
+            <tr *ngFor="let data of hotelDetailsByOwner | search : searchText">
+                <td>{{data.id}}</td>
+                <td>{{data.ownerName}}</td>
+                <td>{{data.hotelName}}</td>
+                <td>{{data.hotelMenu}}</td>
+                <td>{{data.roomAvailable}}</td>
+                <td>{{data.hotelAddress}}</td>
+                <td>{{data.hotelMobile}}</td>
+                <td><mat-icon (click)="editData(data.id)">create</mat-icon></td>
+                <td><mat-icon (click)="deleteData(data.id)">delete</mat-icon></td>
+            </tr>
+        </table><br><br>
+        <div class="backbtn">
+            <button mat-button color="warn" routerLink="/owner/ownerlanding">Back</button>
+        </div>
+    </div>
+</body>

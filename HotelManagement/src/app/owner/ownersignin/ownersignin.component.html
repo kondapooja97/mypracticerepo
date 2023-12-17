@@ -1,0 +1,22 @@
+<body>
+<button mat-button color="warn" class="btn1" routerLink="/owner/ownerlanding" >Back</button>
+<div class="main">
+  <h2>Owner Login Form</h2>
+    <form [formGroup]="loginForm!">
+        <mat-form-field class="input">
+            <mat-label>Enter Name</mat-label>
+            <input matInput  placeholder="Enter your name" formControlName="userName">
+            <mat-hint>Enter your name</mat-hint>
+          </mat-form-field><br><br>
+         <mat-form-field class="input">
+            <mat-label>Enter Password</mat-label>
+            <input matInput [type]="showpass ? 'text' : 'password'" placeholder="Enter your password" formControlName="userpass">
+            <mat-icon (click)="showPassword()"  matSuffix >visibility_off</mat-icon>
+            <mat-hint>Enter your valid password</mat-hint>
+        </mat-form-field><br><br>
+          <button  style="text-align: center;" class="btn"  (click)="submit()">Sign In</button><br><br>
+          Not a member? &nbsp; <span style="color: red;" routerLink="/owner/ownersignup">Sign up now</span>  
+    </form>
+</div>
+</body>
+

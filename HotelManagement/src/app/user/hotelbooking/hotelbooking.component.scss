@@ -1,0 +1,30 @@
+body{
+    margin: auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url('~src/assets/images/image12.jpg');
+    background-size: cover;
+    background-position: absolute;
+}
+.main-headind{
+    color: red;
+    text-shadow: 15px;
+    text-decoration: wavy;
+}
+form{ 
+    background-color:lightgreen;
+    border-radius: 10%;
+    border: 2px solid black;
+     margin-left: 30%;
+     margin-right: 30%;
+     margin-top: auto;
+     margin-bottom: auto;
+}
+.button{
+    padding: 10px;
+    margin-top: 20px;
+    margin: 10px;
+}
+.button:hover{
+    background-color:orange;
+}

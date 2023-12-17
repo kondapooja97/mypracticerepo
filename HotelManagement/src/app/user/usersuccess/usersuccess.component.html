@@ -1,0 +1,31 @@
+<body>
+<div>
+    <h2>View Hotel List</h2>
+    <div>
+        <input type="text" class="searchbox" [(ngModel)]="searchText" placeholder="&#61442; Start Searching from Id or HotelName or HotelAddress">
+    </div>
+    <div>
+    <table border="2px black">
+        <tr>
+            <th *ngFor="let heading of headings">{{heading}}</th>
+        </tr>
+        
+        <tr *ngFor="let data of apidata | search : searchText">
+            <td>{{data.id}}</td>
+            <td>{{data.ownerName}}</td>
+            <td>{{data.hotelName}}</td>
+            <td>{{data.hotelMenu}}</td>
+            <td>{{data.roomAvailable}}</td>
+            <td>{{data.hotelAddress}}</td>
+            <td>{{data.hotelMobile}}</td>
+            <td><button class="button" mat-raised-button color="accent" routerLink="/user/hotelbooking">Book Now</button></td>
+            <!-- <td><mat-icon (click)="deleteData(data.id)">delete</mat-icon></td> -->
+        </tr>
+    </table>
+    <br>
+</div>
+    <div class="backbtn">
+        <button mat-button color="warn" routerLink="/user/userlanding">Back</button>
+    </div>
+</div>
+</body>

@@ -1,0 +1,22 @@
+<body>
+    <button mat-button color="warn" routerLink="/user/userlanding">Back</button>
+    <div class="main">
+        <h2>User Login Form</h2>
+        <form [formGroup]="userLoginform">
+            <mat-form-field class="input">
+                <mat-label>Username:</mat-label>
+                <input type="text" matInput formControlName="username" placeholder="Enter your name">
+                <mat-error>username is required!</mat-error>
+            </mat-form-field><br>
+            <mat-form-field class="input">
+                <mat-label>Password:</mat-label>
+                <input [type]="showpass ? 'text' : 'password'" matInput formControlName="password" placeholder="Enter your password">
+                <mat-icon (click)="showpassword()" matSuffix>visibility_off</mat-icon>
+                <mat-error>password is required!</mat-error>
+            </mat-form-field><br>
+            <button mat-raised-button color="accent" (click)="login()">Login</button><br><br>
+            <div>Not a member? &nbsp;&nbsp;<span style="color: red;" routerLink="/user/usersignup"><i>Sign up now</i></span></div>
+        </form>
+    </div>
+</body>
+

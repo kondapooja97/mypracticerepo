@@ -1,0 +1,320 @@
+{
+  "admin": [
+    {
+      "username": "pooja",
+      "useremail": "pooja@gmail.com",
+      "usermobile": "9855989988",
+      "userpass": "pooja@111",
+      "userconfpass": "pooja@111",
+      "gender": "female",
+      "userCheck": true,
+      "id": 1
+    },
+    {
+      "username": "chinmay",
+      "useremail": "chinmay@yahoo.in",
+      "usermobile": "8989546987",
+      "userpass": "chinmay@111",
+      "userconfpass": "chinmay@111",
+      "gender": "male",
+      "userCheck": true,
+      "id": 2
+    },
+    {
+      "username": "kavita",
+      "useremail": "kavita@gmail.com",
+      "usermobile": "7895623485",
+      "userpass": "kavita@111",
+      "userconfpass": "kavita@111",
+      "gender": "female",
+      "userCheck": true,
+      "id": 3
+    },
+    {
+      "username": "prabhu",
+      "useremail": "prabhu@gmail.com",
+      "usermobile": "7894561236",
+      "userpass": "prabhu@19",
+      "userconfpass": "prabhu@19",
+      "gender": "male",
+      "userCheck": true,
+      "id": 4
+    }
+  ],
+  "owner": [
+    {
+      "userName": "pooja",
+      "userEmail": "pooja@gmail.com",
+      "userMob": "9855221476",
+      "pan": "ASWER8956O",
+      "gender": "Female",
+      "userpass": "pooja@10",
+      "userCheck": true,
+      "userConfirmpass": "pooja@10",
+      "id": 1
+    },
+    {
+      "userName": "aranya",
+      "userEmail": "aranya@gmail.com",
+      "userMob": "8596327412",
+      "pan": "ASWER7845O",
+      "gender": "Female",
+      "userpass": "aranya#22",
+      "userCheck": true,
+      "userConfirmpass": "aranya#22",
+      "id": 2
+    },
+    {
+      "userName": "Naresh",
+      "userEmail": "naresh@gmail.com",
+      "userMob": "8180080240",
+      "pan": "ASDWE4521L",
+      "gender": "Male",
+      "userpass": "Naresh@111",
+      "userCheck": true,
+      "userConfirmpass": "Naresh@111",
+      "id": 3
+    },
+    {
+      "userName": "Lavanya",
+      "userEmail": "lavanya@gmail.com",
+      "userMob": "9122457863",
+      "pan": "WERDF8754L",
+      "gender": "Female",
+      "userpass": "lavanya@2121",
+      "userCheck": true,
+      "userConfirmpass": "lavanya@2121",
+      "id": 4
+    }
+  ],
+  "user": [
+    {
+      "username": "pooja",
+      "useremail": "pooja@yahoo.com",
+      "usermobile": "9822999822",
+      "userpass": "pooja@10",
+      "userconfpass": "pooja@10",
+      "gender": "female",
+      "userCheck": true,
+      "id": 1
+    },
+    {
+      "username": "kavita",
+      "useremail": "kavita@gmail.com",
+      "usermobile": "9878459612",
+      "userpass": "kavita@123",
+      "userconfpass": "kavita@123",
+      "gender": "female",
+      "userCheck": true,
+      "id": 2
+    },
+    {
+      "username": "",
+      "useremail": "",
+      "usermobile": "",
+      "userpass": "",
+      "userconfpass": "",
+      "gender": "other",
+      "userCheck": "",
+      "id": 3
+    },
+    {
+      "username": "",
+      "useremail": "",
+      "usermobile": "",
+      "userpass": "",
+      "userconfpass": "",
+      "gender": "other",
+      "userCheck": "",
+      "id": 4
+    },
+    {
+      "username": "chinnu",
+      "useremail": "chinnu@yahoo.in",
+      "usermobile": "7898456532",
+      "userpass": "chinnu@22",
+      "userconfpass": "chinnu@22",
+      "gender": "female",
+      "userCheck": true,
+      "id": 5
+    }
+  ],
+  "hotelDetails": [
+    {
+      "ownerName": "prabhavati",
+      "hotelName": "hotel karuna",
+      "hotelAddress": "solapur",
+      "hotelMobile": "7894561234",
+      "hotelMenu": [
+        "Mini Thali"
+      ],
+      "roomAvailable": "4",
+      "userPass": "Pooja@10",
+      "owenrCheck": true,
+      "id": 2
+    },
+    {
+      "ownerName": "chinnari",
+      "hotelName": "hotel mauali",
+      "hotelAddress": "karnataka",
+      "hotelMobile": "8745961235",
+      "hotelMenu": [
+        "Non-Veg Varieties"
+      ],
+      "roomAvailable": "2",
+      "userPass": "Chinu@111",
+      "owenrCheck": true,
+      "id": 3
+    },
+    {
+      "ownerName": "prabhu",
+      "hotelName": "Hotel 5 star",
+      "hotelAddress": "pune",
+      "hotelMobile": "8596321475",
+      "hotelMenu": [
+        "Mini Thali",
+        "Special Thali "
+      ],
+      "roomAvailable": "2",
+      "userPass": "Prabhu@123",
+      "owenrCheck": true,
+      "id": 4
+    },
+    {
+      "ownerName": "pooja",
+      "hotelName": "Hotel Nisarg",
+      "hotelAddress": "kolhapur",
+      "hotelMobile": "9999999977",
+      "hotelMenu": [
+        "Chicken Biryani",
+        "Egg Varieties"
+      ],
+      "roomAvailable": "5",
+      "userPass": "Pooja@111",
+      "owenrCheck": true,
+      "id": 8
+    },
+    {
+      "ownerName": "Naresh",
+      "hotelName": "Hotel Balaji Sarovar",
+      "hotelAddress": "solapur",
+      "hotelMobile": "9898985566",
+      "hotelMenu": [
+        "Dosa",
+        "Mini Thali",
+        "Gulab Jamun",
+        "Egg Varieties"
+      ],
+      "roomAvailable": "10",
+      "userPass": "Naresh@222",
+      "owenrCheck": true,
+      "id": 9
+    },
+    {
+      "ownerName": "kavita",
+      "hotelName": "Hotel Swarg",
+      "hotelAddress": "Kolhapur",
+      "hotelMobile": "7895462187",
+      "hotelMenu": [
+        "Egg Varieties",
+        "Non-Veg Varieties"
+      ],
+      "roomAvailable": "2",
+      "userPass": "Kavita@111",
+      "owenrCheck": true,
+      "id": 10
+    }
+  ],
+  "hotelBooking": [
+    {
+      "fname": "pooja",
+      "lname": "konda",
+      "email": "pooja@gmail.com",
+      "mobile": "9898989999",
+      "arrivalDate": "2023-12-11T18:30:00.000Z",
+      "departureDate": "2023-12-25T18:30:00.000Z",
+      "guests": 6,
+      "address": "pl no. 210,hydrabad road,solapur",
+      "city": "solapur",
+      "state": "Maharashtra",
+      "pin": "413006",
+      "paymentMethod": "upi",
+      "id": 1
+    },
+    {
+      "fname": "cinnari",
+      "lname": "konda",
+      "email": "chinnu@gmail.com",
+      "mobile": "4578963245",
+      "arrivalDate": "2023-12-31T18:30:00.000Z",
+      "departureDate": "2024-01-25T18:30:00.000Z",
+      "guests": 10,
+      "address": "meera road",
+      "city": "mumbai",
+      "state": "maharashtra",
+      "pin": "413001",
+      "paymentMethod": "cardPay",
+      "id": 2
+    },
+    {
+      "fname": "kavya",
+      "lname": "lahari",
+      "email": "kavya@rediff.com",
+      "mobile": "9898987745",
+      "arrivalDate": "",
+      "departureDate": "",
+      "guests": 1,
+      "address": "satara",
+      "city": "mahabaleshwar",
+      "state": "maha",
+      "pin": "",
+      "paymentMethod": "other",
+      "id": 3
+    },
+    {
+      "fname": "kavita",
+      "lname": "konda",
+      "email": "kavita@yahoo.in",
+      "mobile": "4578963256",
+      "arrivalDate": "",
+      "departureDate": "",
+      "guests": 1,
+      "address": "meera road",
+      "city": "pandharpur",
+      "state": "maha",
+      "pin": "",
+      "paymentMethod": "other",
+      "id": 4
+    },
+    {
+      "fname": "kaushik",
+      "lname": "mane",
+      "email": "kaushik@gmail.com",
+      "mobile": "7894561235",
+      "arrivalDate": "2023-12-24T18:30:00.000Z",
+      "departureDate": "2023-12-26T18:30:00.000Z",
+      "guests": 15,
+      "address": "bale nagar",
+      "city": "satara",
+      "state": "sangali",
+      "pin": "413001",
+      "paymentMethod": "cardPay",
+      "id": 5
+    },
+    {
+      "fname": "Lasya",
+      "lname": "patil",
+      "email": "lasya@gmail.com",
+      "mobile": "7898456565",
+      "arrivalDate": "2023-12-24T18:30:00.000Z",
+      "departureDate": "2024-02-14T18:30:00.000Z",
+      "guests": 10,
+      "address": "adarsh road",
+      "city": "kerla",
+      "state": "uttarpradesh",
+      "pin": "413006",
+      "paymentMethod": "cardPay",
+      "id": 6
+    }
+  ]
+}

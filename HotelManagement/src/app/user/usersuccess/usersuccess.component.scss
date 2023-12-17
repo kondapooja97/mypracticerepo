@@ -1,0 +1,51 @@
+body {
+    background-image: url('~src/assets/images/image11.jpg');
+    background-size: cover;
+    background-position: absolute;
+  }
+  .btn {
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .btn1:hover {
+    color: orangered;
+  }
+  h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: papayawhip;
+    font-style: italic;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td,th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    background-color: lavenderblush;
+  }
+  th {
+    border-bottom: 2px solid black !important
+  }
+  .backbtn {
+    text-align: center;
+  }
+  .button:hover{
+    background-color: palegreen;
+    color: black;
+  }
+  .backbtn:hover {
+    background-color: khaki;
+    width: 100%;
+  }
+  .searchbox{
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 600px;
+    width: 350px;
+  }
+  
+

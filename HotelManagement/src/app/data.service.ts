@@ -17,6 +17,8 @@ export class DataService {
   adminName: any;
   userName: any;
   http: any;
+  new: boolean=false;
+
 
   constructor(private httpClient: HttpClient) { }
 

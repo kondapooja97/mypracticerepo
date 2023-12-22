@@ -1,8 +1,7 @@
 <body>
     <div>
         <button class="btn" mat-button color="warn" routerLink="/owner/ownerlanding">Back</button>
-        <button class="btn" mat-raised-button color="primary" (click)="newHotelRegistration()"
-            routerLink="/owner/ownersignin">New Hotel Registration</button>&nbsp;
+        <button class="btn" mat-raised-button color="primary" (click)="newHotelRegistration()" (click)="new()" routerLink="/owner/ownerregistration">New Hotel Registration</button>&nbsp;
         <button class="btn" mat-raised-button color="warn" (click)="showHotelDetails()">Hotel List</button>
         <div>
             <input type="text" class="searchbox" [(ngModel)]="searchText" placeholder="search hotel list">
@@ -28,7 +27,7 @@
             </tr>
         </table><br><br>
         <div class="backbtn">
-            <button mat-button color="warn" routerLink="/owner/ownerlanding">Back</button>
+            <button mat-button color="warn" routerLink="/owner/ownersuccess">Back</button>
         </div>
     </div>
 </body>

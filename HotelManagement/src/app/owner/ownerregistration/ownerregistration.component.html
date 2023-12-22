@@ -1,5 +1,5 @@
 <body>  
-<button mat-button color="warn" routerLink="/owner/ownerlanding">Back</button>
+<button mat-button color="warn" routerLink="/owner/ownersuccess">Back</button>
 <div class="main">
     <h2 style="text-align:center ;"><i><b>Register Here</b></i></h2>
     <form [formGroup]="regitrationForm" autocomplete="off">
@@ -52,8 +52,8 @@
 
         <mat-checkbox formControlName="owenrCheck"> Accept Terms & Conditions</mat-checkbox>
         <div style="text-align: center;">
-            <button *ngIf="recordById.length == 0" mat-raised-button color="accent" (click)="newHotelRegistration()">Register</button>
-            <button *ngIf="recordById.length > 0" mat-raised-button color="accent" (click)="update()">Update</button>
+            <button *ngIf="new" mat-raised-button color="accent" (click)="newHotelRegistration()">Register</button>
+            <button *ngIf="!new" mat-raised-button color="accent" (click)="update()">Update</button>
         </div><br>
     </form>
 </div>

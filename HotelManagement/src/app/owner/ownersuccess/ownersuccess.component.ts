@@ -54,17 +54,17 @@ export class OwnersuccessComponent {
     console.log("recordById", recordById);
     this.dataService.recordById = recordById
     this.dataService.id = id;
-
     this.router.navigateByUrl('/owner/ownerregistration')
   }
-
+  
   deleteData(id: any) {
     this.dataService.deleteApiCall("hotelDetails",id).subscribe(res=>{})
     this.showHotelDetails();
   }
-  // async deleteData(id: any) {
-  //   return this.dataService.deleteApiCallById(id).toPromise
-  // }
+  
+  new(){
+    this.dataService.new = true;
+  }
 }
 
 

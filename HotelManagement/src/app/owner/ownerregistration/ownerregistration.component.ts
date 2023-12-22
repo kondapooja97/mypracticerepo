@@ -13,6 +13,8 @@ export class OwnerregistrationComponent {
   showpass = false;
   id: any;
   recordById: any;
+  new:any;
+
   constructor(private formBuilder: FormBuilder, private dataService: DataService, private router: Router) { }
 
   options: string[] = ['Paneer Tikka Masala', 'Paneer Butter Masala', 'Dosa', 'Mini Thali', 'Special Thali ', 'Mutton Biryani', 'Chicken Biryani', 'Gulab Jamun', 'Egg Varieties', 'Non-Veg Varieties'];
@@ -20,6 +22,7 @@ export class OwnerregistrationComponent {
   ngOnInit() {
     this.id = this.dataService.id;
     this.recordById = this.dataService.recordById;
+    this.new=this.dataService.new;
     this.formValidation();
   }
 
@@ -56,6 +59,7 @@ export class OwnerregistrationComponent {
   }
   ngOnDestroy(){
     console.log("destroy");
+    this.dataService.new=false;
     this.dataService.recordById=[];
   }
 }

@@ -184,12 +184,12 @@
       "ownerName": "pooja",
       "hotelName": "Hotel Nisarg",
       "hotelAddress": "kolhapur",
-      "hotelMobile": "9999999977",
+      "hotelMobile": "9999999988",
       "hotelMenu": [
         "Chicken Biryani",
         "Egg Varieties"
       ],
-      "roomAvailable": "5",
+      "roomAvailable": "10",
       "userPass": "Pooja@111",
       "owenrCheck": true,
       "id": 8
@@ -223,6 +223,50 @@
       "userPass": "Kavita@111",
       "owenrCheck": true,
       "id": 10
+    },
+    {
+      "ownerName": "pooja",
+      "hotelName": "hotel taj",
+      "hotelAddress": "mumbai",
+      "hotelMobile": "7898654589",
+      "hotelMenu": [
+        "Dosa",
+        "Mini Thali",
+        "Special Thali "
+      ],
+      "roomAvailable": "2",
+      "userPass": "Pooja@145",
+      "owenrCheck": true,
+      "id": 11
+    },
+    {
+      "ownerName": "pooja",
+      "hotelName": "hotel sonpari",
+      "hotelAddress": "maharashtra",
+      "hotelMobile": "9888559678",
+      "hotelMenu": [
+        "Paneer Tikka Masala",
+        "Paneer Butter Masala"
+      ],
+      "roomAvailable": "4",
+      "userPass": "Pooja@111",
+      "owenrCheck": true,
+      "id": 12
+    },
+    {
+      "ownerName": "pooja",
+      "hotelName": "hotel ajinkya",
+      "hotelAddress": "satara",
+      "hotelMobile": "9922995477",
+      "hotelMenu": [
+        "Dosa",
+        "Gulab Jamun",
+        "Non-Veg Varieties"
+      ],
+      "roomAvailable": "3",
+      "userPass": "Pooja$111",
+      "owenrCheck": true,
+      "id": 13
     }
   ],
   "hotelBooking": [

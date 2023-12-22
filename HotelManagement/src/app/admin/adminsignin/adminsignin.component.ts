@@ -33,10 +33,19 @@ export class AdminsigninComponent {
     this.showpass = !this.showpass;
   }
 
-  login() {
+  getAdminData() {
+    let endpoint = "admin";
+    this.dataService.getApiCall(endpoint).subscribe(res => {
+      this.adminData = res;
+      console.log("Admin data", this.adminData);
+    });
+  }
+
+
+  submit() {
     if (this.adminData) {
       var matchedObj = this.adminData.find((item: any) => {
-        if (item.username == this.adminLoginform.value.username && item.password == this.adminLoginform.value.password) {
+        if (item.username == this.adminLoginform.value.username && item.userpass == this.adminLoginform.value.password) {
           return item;
         }
       });
@@ -52,13 +61,6 @@ export class AdminsigninComponent {
     }
   }
   
-  getAdminData() {
-    let endpoint = "admin";
-    this.dataService.getApiCall(endpoint).subscribe(res => {
-      this.adminData = res;
-      console.log("Admin data", this.adminData);
-    });
-  }
-
+  
 
 }

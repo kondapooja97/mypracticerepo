@@ -34,14 +34,14 @@ formDetails(){
 }
 
 getUserData(){
-  let endpoint="admin";
+  let endpoint="user";
   this.dataService.getApiCall(endpoint).subscribe(res=>{
     this.userData=res;
-    console.log("Admin data",this.userData);
+    console.log("User data",this.userData);
   });
 }
 
-login() {
+submit() {
   if (this.userData) {
     var matchedObj=this.userData.find((item: any) => {
       if (item.username == this.userLoginform.value.username && item.password == this.userLoginform.value.password) {

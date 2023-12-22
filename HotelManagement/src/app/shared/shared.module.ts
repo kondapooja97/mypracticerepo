@@ -42,7 +42,8 @@ import { SearchPipe } from '../search.pipe';
     FormsModule,
     ReactiveFormsModule,
     MatSelectModule,
-    SearchPipe,
+    SearchPipe
+    
   ]
 })
 export class SharedModule { }

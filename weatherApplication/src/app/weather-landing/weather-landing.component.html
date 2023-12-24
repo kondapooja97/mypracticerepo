@@ -1,0 +1,14 @@
+<div class="box">
+    <input type="text" name="text" placeholder="enter city name" #inp1> &nbsp;&nbsp;
+    <button (click)="getWeatherDetails(inp1.value)">show weather Details</button>
+</div>
+<div *ngIf="data">
+<p><b>City : </b>{{data.name}}</p>
+<p><b>Temperature : </b>{{data.main.temp}} <sup>o</sup>C</p>
+<p><b>Minimum Temperature : </b>{{data.main.temp_min}} <sup>o</sup>C</p>
+<p><b>Maximum Temperature : </b>{{data.main.temp_max}} <sup>o</sup>C</p>
+<p><b>Pressure : </b>{{data.main.pressure }} N/m <sup>2</sup></p>
+<p><b>Humidity : </b>{{data.main.humidity }} Kg/m <sup>3</sup></p>
+<p><b>Speed : </b>{{data.wind.speed}} m/s</p>
+<p><b>Country : </b>{{data.sys.country}}</p>
+</div>  

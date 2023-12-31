@@ -189,7 +189,7 @@
         "Chicken Biryani",
         "Egg Varieties"
       ],
-      "roomAvailable": "10",
+      "roomAvailable": "11",
       "userPass": "Pooja@111",
       "owenrCheck": true,
       "id": 8
@@ -252,21 +252,6 @@
       "userPass": "Pooja@111",
       "owenrCheck": true,
       "id": 12
-    },
-    {
-      "ownerName": "pooja",
-      "hotelName": "hotel ajinkya",
-      "hotelAddress": "satara",
-      "hotelMobile": "9922995477",
-      "hotelMenu": [
-        "Dosa",
-        "Gulab Jamun",
-        "Non-Veg Varieties"
-      ],
-      "roomAvailable": "3",
-      "userPass": "Pooja$111",
-      "owenrCheck": true,
-      "id": 13
     }
   ],
   "hotelBooking": [
@@ -359,6 +344,21 @@
       "pin": "413006",
       "paymentMethod": "cardPay",
       "id": 6
+    },
+    {
+      "fname": "chinnu",
+      "lname": "konda",
+      "email": "chinnu@gmail.com",
+      "mobile": "7894561236",
+      "arrivalDate": "2023-12-30T18:30:00.000Z",
+      "departureDate": "2023-12-31T18:30:00.000Z",
+      "guests": 5,
+      "address": "satara",
+      "city": "kolhapur",
+      "state": "maharashtra",
+      "pin": "413004",
+      "paymentMethod": "cardPay",
+      "id": 7
     }
   ]
 }

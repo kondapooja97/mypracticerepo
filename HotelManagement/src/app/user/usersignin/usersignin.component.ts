@@ -29,7 +29,7 @@ ngOnInit(){
 formDetails(){
   this.userLoginform=this.formBuilder.group({
     username:['',[Validators.required]],
-    password:['',[Validators.required]]
+    userpass:['',[Validators.required]]
   })
 }
 
